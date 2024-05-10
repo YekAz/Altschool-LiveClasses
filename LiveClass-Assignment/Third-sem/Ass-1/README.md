@@ -23,3 +23,22 @@
 * ## My Website
 ![s3-endpoint](./s3-endpoint.png)
 
+
+## STEP 2: Configuring the CloudFront Distribution
+
+    I createdand configured a CloudFront distribution using the static S3 end-point URL
+![cloudfront](./cloudfront-distr-setup.png)
+
+    The distribution was created and my website deployed and assigned a distribution domain name
+![cloudfront](./cloudfront-deploy.png)
+
+    The distributions is now enabled
+![](./cloudfront-enabled.png)
+
+    I can now access my website through the distribution domain name assignes to my cloudfront distribution
+![](./cloudfront-distr-domain-name.png)
+
+
+
+> # THANK YOU
+> *yekinni azeez, the Cloud-Daemon*
