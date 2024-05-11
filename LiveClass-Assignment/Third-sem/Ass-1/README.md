@@ -7,44 +7,50 @@
 I logged into my AWS account as the root user.
 
 I created an s3 bucket and uploaded my static website files
+![alt text](s3-create-page.png)
 
-![s3-bucket](./s3-bucket-files.png)
+## I checked this to keep my S3 bucket private
+![alt text](s3-bucket-privacy.png)
 
-I then configured my s3 bucket to enable static website hosting and other necessary configurations like specifying the index document
+![alt text](s3-bucket-create.png)
+## After creating my bucket, i started uploading my website files
+![alt text](s3-bucket-upload-page.png)
 
-![s3-static](./s3-bucket-config.png)
-
-The bucket policy was added.
-![s3-policy](./s3-bucket-policy.png)
-
-After successfuly doing the above, I was able to access my website through the Amazon S3 endpoint on the internet
-
-* ## End-point URL
-
-![s3-endpoint](./s3-bucket-endpoint-url.png)
-
-* ## My Website
-
-![s3-endpoint](./s3-endpoint.png)
-
+![alt text](s3-bucket-files.png)
 
 ## STEP 2: Configuring the CloudFront Distribution
 
-I createdand configured a CloudFront distribution using the static S3 end-point URL
+## I created and configured a CloudFront distribution using the static S3 end-point URL
+![alt text](cf-page-1.png)
 
-![cloudfront](./cloudfront-distr-setup.png)
+![alt text](cf-page-2.png)
 
-The distribution was created and my website deployed and assigned a distribution domain name
+![alt text](cf-OAC.png)
 
-![cloudfront](./cloudfront-deploy.png)
+![alt text](cf-page-3.png)
 
-The distributions is now enabled
+![alt text](cf-page-4.png)
 
-![](./cloudfront-enabled.png)
+## The distribution was created and a policy was generated
 
-I can now access my website through the distribution domain name assignes to my cloudfront distribution
+![alt text](cf-distribution-page.png)
 
-![](./cloudfront-distr-domain-name.png)
+## Adding the policy generated to my S3 bucket permissions
+![alt text](s3-permission-tab.png)
+
+![alt text](s3-policy-edit.png)
+
+![alt text](s3-policy.png)
+
+## Save Changes
+
+## The distribution is now enabled. So, i can now copy the distribution domain name to access the website throughmy browser 
+
+![alt text](cf-domain-name.png)
+
+
+## Website successfully rendered
+![alt text](cf-rendered-website.png)
 
 
 > # THANK YOU
